@@ -868,9 +868,8 @@ a {
 }
 
 .header2-middle .site-nav__dropdown {
-    display: none;
-    position: absolute;
-    left: 0;
+    position: fixed;
+    left: 34%;
     padding: 0;
     margin: 0;
     z-index: 5;
@@ -883,6 +882,24 @@ a {
 
 .header2-middle .site-nav__dropdown-container:hover>.site-nav__dropdown,
 .site-nav__item:hover>.site-nav__dropdown {
+    opacity: 1;
+    visibility: visible
+}
+.header2-middle .site-nav__dropdown1 {
+    position: fixed;
+    left: 47%;
+    padding: 0;
+    margin: 0;
+    z-index: 5;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175)
+}
+
+.header2-middle .site-nav__dropdown1 li {
+    display: block
+}
+
+.header2-middle .site-nav__dropdown-container:hover>.site-nav__dropdown1,
+.site-nav__item:hover>.site-nav__dropdown1 {
     opacity: 1;
     visibility: visible
 }
@@ -1870,7 +1887,7 @@ label {
 
 /* ABOUT */
 .about {
-    padding: 55px;
+    padding: 0px 40px 0px 40px;
 }
 
 .about .phrase {
@@ -1937,14 +1954,15 @@ label {
 }
 
 .about .story .storyvideo {
-    background-image: url(/assets/images/index/blog/post5.jpg);
+    background-image: url(/assets/images/index/error/about_bg-video.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    height:650px;
-    width: 1000px;
+    height: 650px;
+    width: 1007.3px;
     display: inline-flex;
+    background-size: cover;
     align-items: center;
-    
+
 }
 
 .about .story .playicon {
@@ -2001,31 +2019,37 @@ label {
     background-color: #000;
 }
 
-.services{
-display: flex;
-margin-bottom: 140px;
-padding-left: 100px;
-padding-right: 100px;
+.services {
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
 }
-.services .servicecontent{
+
+.services .servicecontent {
     text-align: center;
 }
-.services .servicecontent .serviceicon{
+
+.services .servicecontent .serviceicon {
     margin-bottom: 30px;
 }
-.services .servicecontent .serviceicon i{
-    color:#777777;
+
+.services .servicecontent .serviceicon i {
+    color: #777777;
     font-size: 35px;
 }
 
-.services .servicecontent .servicetext h3{
+.services .servicecontent .servicetext h3 {
     color: #000000;
     font-size: 16px;
+    font-family: rufina;
 }
-.services .servicecontent .servicetext p{
-    color:#777777;
+
+.services .servicecontent .servicetext p {
+    color: #777777;
     font-size: 14px;
+
 }
+
 .team .top .team-text p {
     display: block;
     font-size: 15px;
@@ -2046,18 +2070,174 @@ padding-right: 100px;
     font-family: Rufina;
     padding-top: 4px;
 }
-.teammembers .memberimage img{
-    width: 330;
-    height: 405;
+
+.teammembers .memberimage img {
+    width: 330px;
+    height: 405px;
     margin-bottom: 30px;
     border-radius: 5px;
 }
-.teammembers .memberimage{
+
+.teammembers .memberimage {
+    position: relative;
 }
-.teammembers .memberinfo .name{
-   text-transform: capitalize;
+
+
+.teammembers .memberinfo .name {
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #3a3d46;
+    font-weight: 600;
 }
-.teammembers .memberinfo .position{
-   text-transform: uppercase;
+
+.teammembers .memberinfo .position {
+    text-transform: uppercase;
+    color: #777777;
+    font-size: 14px;
+    line-height: 1.875;
+    font-family: eina03, helvetica neue, helvetica, arial, sans-serif;
+    font-weight: 400;
 }
+
+
+.elementor-team-socials {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all .5s ease;
+}
+
+.team-icon-socials {
+    background: #fff;
+    border-radius: 5px;
+    margin: 0;
+    padding: 15px;
+    list-style: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* ABOUT END */
+
+/* ERRORPAGE */
+.errorpage {
+    background-image: url(/assets/images/index/error/404.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 890px;
+
+}
+
+.errorpage .errortext {
+    padding-top: 275px;
+    margin: auto;
+    width: 50%;
+}
+
+.errorpage .errortext h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+    font-family: rufina;
+    color: #3a3d46;
+}
+
+.errorpage .buttons {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+.errorpage .buttons a {
+    background-color: #f4c3bc;
+    color: #000;
+    margin-left: 155px;
+    margin-right: -140px;
+    line-height: 1.8em;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 1px;
+    min-width: 200px;
+    text-align: center;
+}
+
+.errorpage .buttons a:hover {
+
+    background-color: #fff;
+
+}
+
+/* ERRORPAGEEND */
+/* ORDERTRACKING */
+.ordertracking {
+    margin-bottom: 130px;
+}
+
+.ordertracking p {
+    padding: 0 29%;
+    margin: 0 0 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #777777;
+    padding-top: 45px;
+}
+
+.ordertracking .orderid {
+    padding: 0px 190px;
+}
+
+.ordertracking .billingemail {
+    margin-right: 35px;
+    margin-left: -150px;
+}
+
+.ordertracking .inputs input[type=text],
+.ordertracking .inputs input[type=email] {
+    color: #777;
+    display: block;
+    font-size: 14px;
+    letter-spacing: 0;
+    padding: 15px 20px;
+    width: 450px;
+    border-radius: 0;
+    outline: none;
+    border: 1px solid #eee;
+    background-color: #fff;
+    min-height: 58px;
+}
+
+.ordertracking .inputs button {
+    background-color: #f4c3bc;
+    border: none;
+    color: #fff;
+    padding: 15px 70px;
+}
+.ordertracking .trackbutton{
+    margin-top: 40px;
+}
+.ordertracking .orderid label{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 0.7rem;
+    font-family: rufina;
+}
+.ordertracking .billingemail label{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 0.7rem;
+    font-family: rufina;
+}
+
+/* ORDERTRACKINGEND */
