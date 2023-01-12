@@ -885,6 +885,7 @@ a {
     opacity: 1;
     visibility: visible
 }
+
 .header2-middle .site-nav__dropdown1 {
     position: fixed;
     left: 47%;
@@ -2220,10 +2221,12 @@ label {
     color: #fff;
     padding: 15px 70px;
 }
-.ordertracking .trackbutton{
+
+.ordertracking .trackbutton {
     margin-top: 40px;
 }
-.ordertracking .orderid label{
+
+.ordertracking .orderid label {
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 400;
@@ -2231,7 +2234,8 @@ label {
     margin-bottom: 0.7rem;
     font-family: rufina;
 }
-.ordertracking .billingemail label{
+
+.ordertracking .billingemail label {
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 400;
@@ -2241,3 +2245,117 @@ label {
 }
 
 /* ORDERTRACKINGEND */
+
+/* TERM&CONDITIONS */
+.termandcondition {
+    padding: 98px 330px;
+}
+
+.termandcondition div h2 {
+    text-align: center;
+    padding-top: 20px;
+    color: #000000;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: rufina;
+}
+
+.termandcondition div p {
+    padding-top: 20px;
+    color: #777777;
+}
+
+.support {
+    display: flex;
+    padding: 5px 25px;
+}
+
+.needsupport {
+    padding: 75px 0px;
+}
+
+.needsupport h2 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 62px;
+    color: #000000;
+    font-family: rufina;
+}
+
+.needsupport .support .supportcontent {
+    padding: 45px 0px 45px 0px;
+    border: 1px solid #eeeeee;
+    text-align: center;
+}
+
+.needsupport .support .supportcontent .icon i {
+    font-size: 60px;
+    color: #000000;
+    text-align: center;
+}
+
+.needsupport .support .supportcontent .text h3 {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 10px;
+
+}
+
+.needsupport .support .col-lg-3 {
+    padding: 45px 35px;
+}
+
+.needsupport .support .supportcontent:hover {
+    box-shadow: 7px 7px 30px 0.3px rgb(0 0 0 / 10%);
+}
+
+.needsupport .support .supportcontent:hover .icon i {
+    color: #f4c3bc;
+}
+
+/* TERM&CONDITIONSEND */
+
+/* Warrantyservices */
+.warrantyservices {
+    padding: 98px 327px;
+}
+
+.warrantyservices div h2 {
+    text-align: center;
+    padding-top: 20px;
+    color: #000000;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: rufina;
+}
+
+.warrantyservices div p {
+    padding-top: 20px;
+    color: #777777;
+}
+
+/* WARRANTYSERVICESEND */
+
+/* SHIPPINGMETHOD */
+.shippingmethod {
+    padding: 98px 345px;
+    text-align: center;
+}
+
+.shippingmethod div h2 {
+    text-align: center;
+    padding-top: 20px;
+    color: #000000;
+    font-size: 24px;
+    margin-bottom: -10px;
+    font-weight: 600;
+    font-family: rufina;
+}
+
+.shippingmethod div p {
+    padding-top: 20px;
+    color: #777777;
+}
+
+/* SHIPPINGMETHODEND */
