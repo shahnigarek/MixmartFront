@@ -2686,7 +2686,9 @@ label {
 
     }
 
-    .header-bottom {}
+    .header-bottom {
+        display: none;
+    }
 
     .header-middle-middle {
         text-align: left;
