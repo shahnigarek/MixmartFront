@@ -10,9 +10,17 @@ $(document).ready(function () {
         slidesToShow: 1,
     });
     $('.slider2').slick({
-        slidesToShow: 1,
+        
+
+        draggable: true,
         autoplay: true,
-        slidesToScroll: 1
+        autoplaySpeed: 4000,
+        arrows: false,
+        fade: true,
+        speed: 600,
+        infinite: true,
+        cssEase: 'ease-in-out',
+        touchThreshold: 100
     });
     $('.brandslider').slick({
         dots: true,
@@ -23,6 +31,7 @@ $(document).ready(function () {
         autoplaySpeed: 10000,
         slidesToShow: 1,
     });
+    
     AOS.init();
    
   
