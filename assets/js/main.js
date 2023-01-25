@@ -31,6 +31,15 @@ $(document).ready(function () {
         autoplaySpeed: 10000,
         slidesToShow: 1,
     });
+    $('.brandslider1').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        autoplay: true,
+        slidesToScroll: 2,
+        autoplaySpeed: 10000,
+        slidesToShow: 2,
+    });
     
     AOS.init();
    

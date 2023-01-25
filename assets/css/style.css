@@ -13,7 +13,10 @@ a {
 
 
 /* INDEX START */
-
+.about .brandslider1 {
+    display: none;
+  
+}
 /* HEADER START */
 
 .header-top {
@@ -468,6 +471,7 @@ a {
 .postinner {
     display: flex;
     padding-top: 65px;
+    padding-left: 90px;
 }
 
 
@@ -501,6 +505,7 @@ a {
 .post .postinner .post-content .post-text h3 {
     line-height: 1.45;
     font-size: 20px;
+    width: 75%;
     font-family: Rufina;
     color: #3a3d46
 }
@@ -664,7 +669,9 @@ a {
     font-family: Rufina;
     padding-top: 4px;
 }
-
+.best-sellers .bestsellerproducts{
+    padding: 30px 40px;
+}
 .best-sellers .bestsellerproducts .product-image img {
     width: 333px;
     height: 333px;
@@ -1510,7 +1517,7 @@ table {
 .contactdrop .heading {
 
     text-align: left;
-    width: 65%;
+    width: 36%;
     padding: 0px 0px 0px 120px;
     margin-top: -47px;
 }
@@ -1550,7 +1557,7 @@ label {
     margin-top: 10px;
     color: #777777;
     height: 58px;
-    width: 80%;
+    width: 100%;
     border: none;
     border-bottom: 1px solid #000000;
     padding: 0px 0px 0px 0px;
@@ -1564,7 +1571,7 @@ label {
     color: #777777;
     border: none;
     height: 58px;
-    width: 80%;
+    width: 100%;
     outline: none;
     padding: 0px 0px 0px 0px;
     border-bottom: 1px solid #000000;
@@ -1574,7 +1581,7 @@ label {
     font-size: 16px;
     color: #777777;
     border: none;
-    width: 80%;
+    width: 100%;
     height: 155px;
     outline: none;
     padding: 0px 0px 0px 0px;
@@ -1597,7 +1604,7 @@ label {
     font-size: 14px;
     border-color: #222;
     color: #fff;
-    width: 30%;
+    width: 45%;
     font-weight: 600;
 }
 
@@ -1610,7 +1617,7 @@ label {
 .contactdrop iframe {
     padding-left: 0;
     padding-top: 25px;
-    width: 80%;
+    width: 100%;
 }
 
 /* CONTACT END */
@@ -2644,7 +2651,10 @@ label {
 @media (max-width: 576px) {
 
     /* INDEX START */
-
+    .about .brandslider1 {
+        display: none;
+        
+    }
     /* HEADER START */
 
     .header-top {
@@ -3073,7 +3083,7 @@ label {
     }
 
     .making .handmade .product-cart .cart-image img {
-        width: 360px !important;
+        width: 340px !important;
     }
 
     .making .handmade .image1 {
@@ -3232,13 +3242,12 @@ label {
     }
 
     .best-sellers .bestsellerproducts .prc {
-        padding-left: 30px !important;
-
+       padding-left: 0px;
     }
 
     .best-sellers .bestsellerproducts .product-image img {
-        width: 355px;
-        height: 355px;
+        width: 340px;
+        height: 340px;
 
     }
 
@@ -3326,6 +3335,9 @@ label {
         height: 1200px;
         background-size: cover;
     }
+    .movement .movement-image img{
+        margin-left: 40px;
+    }
 
     .movement .cardboxes {
         display: inline-block !important;
@@ -3333,7 +3345,7 @@ label {
     }
 
     .movement .cardboxes .cardcontainer {
-        width: 345px;
+        width: 340px;
         min-height: 240px;
         border: 2px solid #fff;
     }
@@ -3408,6 +3420,7 @@ label {
         padding: 0 40px;
         padding-bottom: 15px;
     }
+    
 
 
     /* MOVEMENT END */
@@ -5128,7 +5141,7 @@ label {
 /* MYACCOUNT */
 
 /* TABLET */
-@media (max-width: 768px) {
+@media  (min-width:580px) and (max-width: 768px) {
 
     /* INDEX START */
 
@@ -6022,16 +6035,18 @@ label {
 /* INDEX END */
 
 /* HEADER2 */
+
 .header2 {
     padding: 15px 40px;
     overflow: hidden;
+    
 }
 
 .header2-middle {
     font-family: rufina, sans-serif;
     text-align: center;
-    margin-top: 10px;
-    margin-left: -200px;
+    margin-top: 0px;
+    margin-left: 0px;
 }
 
 .header2-middle .site-nav li {
@@ -6151,8 +6166,11 @@ label {
 
 .header2-right {
     display: flex;
-    margin-left: 240px;
+    margin-left: 130px;
     padding: 15px 25px;
+    top: 20px;
+    left: 444px;
+    position: absolute;
 
 
 }
@@ -6175,7 +6193,12 @@ label {
 .sorting {
     display: flex;
 }
-
+.asidecontent{
+    display: none;
+}
+.maincontent .result{
+    display: none;
+}
 .sorting select {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -6200,7 +6223,9 @@ label {
     margin-top: -1px;
     border: 1px solid #eee;
 }
-
+.maincontent .col-md-auto{
+display: contents;
+}
 .maincontent .productss .product-image img {
     width: 320px;
     height: 320px;
@@ -6397,13 +6422,17 @@ label {
 
 /* PRODUCTINDEX */
 .productcontent {
-    padding: 55px;
+    padding: 70px 35px;
 }
 
 .productinfo {
-    padding-left: 60px;
+    padding-left: 0px;
+    padding-top: 35px;
 }
-
+.productcontent .col-lg-7 img{
+    width: 670px !important;
+    height: 700px !important;
+}
 
 .productcontent .col-lg-5 h1 {
     margin-bottom: 15px;
@@ -6477,8 +6506,8 @@ label {
     background-color: #2d2d2d;
     border-color: #2d2d2d;
     color: #fff;
-    padding: 0px 130px;
     font-size: 20px;
+    width: 85%;
 }
 
 .productcontent .productinfo .addtowishlist a {
@@ -6562,8 +6591,8 @@ label {
 }
 
 .relatedproducts .relatedproductss .product-image img {
-    width: 435px;
-    height: 435px;
+    width: 200px;
+    height: 200px;
 
 }
 
@@ -6574,7 +6603,7 @@ label {
     padding-left: 15px;
     padding-right: 15px;
     text-align: center;
-    width: 435px;
+    width: 200px;
     height: 110px;
 }
 
@@ -6603,7 +6632,7 @@ label {
     box-shadow: 0 3px 7.92px 0.08px rgb(0 0 0 / 8%);
     border-color: transparent;
     color: #3a3d46;
-    width: 435px;
+    width: 200px;
 }
 
 .relatedproducts .relatedproductss .product-image .onsale {
@@ -6625,15 +6654,15 @@ label {
 /* CONTACT */
 .contactinformation {
     display: flex;
-    padding: 150px 90px;
+    padding: 150px 0px;
 
 }
 
 .contactinformation .heading {
 
     text-align: left;
-    width: 35%;
-    padding: 0px 0px 0px 120px;
+    width: 40%;
+    padding: 0px ;
 }
 
 .contactinformation .heading p {
@@ -6658,7 +6687,7 @@ label {
 }
 
 .table {
-    width: 35%;
+    width: 50%;
     border-color: white;
 }
 
@@ -6678,7 +6707,7 @@ table {
 
 .contactdrop {
     display: flex;
-    padding: 0px 90px;
+    padding: 0px;
     padding-bottom: 100px;
 
 }
@@ -6686,8 +6715,8 @@ table {
 .contactdrop .heading {
 
     text-align: left;
-    width: 65%;
-    padding: 0px 0px 0px 120px;
+    width: 50%;
+    padding: 0px;
     margin-top: -47px;
 }
 
@@ -6712,7 +6741,7 @@ table {
     letter-spacing: 0px;
 }
 
-label {
+.contactdrop label {
     display: block;
     font-weight: bold;
     color: #3a3d46;
@@ -6726,7 +6755,7 @@ label {
     margin-top: 10px;
     color: #777777;
     height: 58px;
-    width: 80%;
+    width: 100%;
     border: none;
     border-bottom: 1px solid #000000;
     padding: 0px 0px 0px 0px;
@@ -6740,7 +6769,7 @@ label {
     color: #777777;
     border: none;
     height: 58px;
-    width: 80%;
+    width: 100%;
     outline: none;
     padding: 0px 0px 0px 0px;
     border-bottom: 1px solid #000000;
@@ -6750,7 +6779,7 @@ label {
     font-size: 16px;
     color: #777777;
     border: none;
-    width: 80%;
+    width: 100%;
     height: 155px;
     outline: none;
     padding: 0px 0px 0px 0px;
@@ -6773,7 +6802,7 @@ label {
     font-size: 14px;
     border-color: #222;
     color: #fff;
-    width: 30%;
+    width: 52%;
     font-weight: 600;
 }
 
@@ -6786,7 +6815,7 @@ label {
 .contactdrop iframe {
     padding-left: 0;
     padding-top: 25px;
-    width: 80%;
+    width: 100%;
 }
 
 /* CONTACT END */
@@ -6799,8 +6828,8 @@ label {
 }
 
 .blogmain .post-image a img {
-    width: 400px;
-    height: 485px;
+    height: 750px;
+    width: 90%;
     object-fit: cover;
 }
 
@@ -6841,11 +6870,15 @@ label {
 
 /* BLOGDETAIL */
 .article {
-    padding: 70px 60px;
+    padding: 70px 35px;
 }
 
 .articletexttitle {
-    padding: 65px 200px;
+    padding: 65px 0px;
+}
+.article .articleinner img{
+    width: 680px;
+    height: 340px;
 }
 
 .article .articleinner .categories a {
@@ -7095,18 +7128,18 @@ label {
 
 /* ABOUT */
 .about {
-    padding: 0px 40px 0px 40px;
+    padding: 0px 40px;
 }
 
 .about .phrase {
     display: flex;
-    padding: 110px 190px;
+    padding: 40px 0px;
 
 }
 
 .about .phrase .imgabout img {
-    width: 485px;
-    height: 580px;
+    width: 415px;
+    height: 495px;
     object-fit: cover;
 }
 
@@ -7114,7 +7147,7 @@ label {
     align-content: center;
     display: flex;
     flex-wrap: wrap;
-    padding: 0px 60px;
+    padding: 0px ;
 }
 
 .about .phrase .phrasetext p {
@@ -7124,10 +7157,25 @@ label {
     font-weight: 600;
 }
 
-.about .brands {
-    display: flex;
-    padding: 120px 0px;
+.about .brandslider1 {
+    display: block;
+    padding: 45px 0px;
     border-top: 1px solid #eee;
+}
+
+.about .brandslider1 .slick-dots {
+    bottom: 5px;
+}
+
+.about .brandslider1 .slick-slide img {
+    display: block;
+    margin: auto;
+    opacity: 0.5;
+}
+
+.about .brands {
+    display: none;
+  
 }
 
 .about .brands img {
@@ -7145,18 +7193,15 @@ label {
 
 
 .about .story {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    margin-bottom: 110px;
+    display: block;
 }
-
 .about .story .storyvideo {
     background-image: url(/assets/images/index/error/about_bg-video.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    height: 650px;
-    width: 1007.3px;
+    height: 290px;
+    width: 670px;
+    margin-top: 75px;
     display: inline-flex;
     background-size: cover;
     align-items: center;
@@ -7184,12 +7229,13 @@ label {
 }
 
 .about .story .storytext {
-    padding: 0px 13px;
-    margin-right: 65px;
+    padding: 0px ;
+    margin-right: 0px;
+    text-align: center;
 }
 
 .about .story .storytext .s {
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 600;
     letter-spacing: 2.8px;
     color: #777777;
@@ -7219,6 +7265,7 @@ label {
 
 .services {
     display: flex;
+    flex-wrap: wrap;
     padding-left: 100px;
     padding-right: 100px;
 }
@@ -7267,6 +7314,10 @@ label {
     background-position: center;
     font-family: Rufina;
     padding-top: 4px;
+}
+.teammembers{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .teammembers .memberimage img {
@@ -7356,8 +7407,8 @@ label {
 .errorpage .buttons a {
     background-color: #f4c3bc;
     color: #000;
-    margin-left: 155px;
-    margin-right: -140px;
+    margin-left: 10px;
+    margin-right: 0px;
     line-height: 1.8em;
     padding: 15px 30px;
     text-transform: uppercase;
@@ -7380,7 +7431,7 @@ label {
 }
 
 .ordertracking p {
-    padding: 0 29%;
+    padding: 0 15%;
     margin: 0 0 40px;
     text-align: center;
     font-size: 14px;
@@ -7389,14 +7440,18 @@ label {
 }
 
 .ordertracking .orderid {
-    padding: 0px 190px;
+    padding: 0px 100px;
 }
 
 .ordertracking .billingemail {
     margin-right: 35px;
-    margin-left: -150px;
+    margin-left: 100px;
+    padding-top: 20px;
 }
-
+.ordertracking .inputs {
+    display: flex;
+    flex-wrap: wrap;
+}
 .ordertracking .inputs input[type=text],
 .ordertracking .inputs input[type=email] {
     color: #777;
@@ -7420,7 +7475,7 @@ label {
 }
 
 .ordertracking .trackbutton {
-    margin-top: 40px;
+    margin-top:0px;
 }
 
 .ordertracking .orderid label {
@@ -7445,7 +7500,7 @@ label {
 
 /* TERM&CONDITIONS */
 .termandcondition {
-    padding: 98px 330px;
+    padding: 98px 55px;
 }
 
 .termandcondition div h2 {
@@ -7498,6 +7553,10 @@ label {
     padding-top: 10px;
 
 }
+.needsupport .support{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .needsupport .support .col-lg-3 {
     padding: 45px 35px;
@@ -7515,7 +7574,7 @@ label {
 
 /* Warrantyservices */
 .warrantyservices {
-    padding: 98px 327px;
+    padding: 98px 55px;
 }
 
 .warrantyservices div h2 {
@@ -7536,7 +7595,7 @@ label {
 
 /* SHIPPINGMETHOD */
 .shippingmethod {
-    padding: 98px 345px;
+    padding: 98px 15px;
     text-align: center;
 }
 
@@ -7557,6 +7616,16 @@ label {
 
 /* SHIPPINGMETHODEND */
 /* PAYMENTMETHOD */
+.pm{
+    padding: 100px 0px !important;
+}
+.pm .paymentmethods img{
+    width: 85%;
+    height: 180px;
+}
+.pm .paymentmethods .firstquestion{
+    padding: 0 44px;
+}
 .paymentmethods .question .text {
     color: #000000;
     font-size: 24px;
@@ -7600,12 +7669,15 @@ label {
 
 .paymentmethods .pp {
     color: #777777;
-    margin-right: 92px;
+    width: 90%;
 }
 
 .paymentquestion {
-    padding-top: 120px;
+    padding: 85px 44px;
     display: flex;
+}
+.paymentquestion .question{
+    margin-right: -5px;
 }
 
 .paymentquestion .question .text {
@@ -7613,6 +7685,7 @@ label {
     font-size: 24px;
     font-weight: 600;
     line-height: 30px;
+
 }
 
 .paymentquestion .question .text:hover {
@@ -7631,29 +7704,29 @@ label {
 .paymentquestion .p {
     padding-top: 25px;
     color: #777777;
-    margin-right: 112px;
+    margin-right: 40px;
 }
 
 .paymentquestion .pp {
     padding-top: 20px;
     color: #777777;
-    margin-right: 114px;
+    margin-right: 42px;
 }
 
 .paymentquestion .p1 {
     padding-top: 55px;
     color: #777777;
-    margin-right: 140px;
+    margin-right: 40px;
 }
 
 .paymentquestion .p2 {
     padding-top: 30px;
     color: #777777;
-    margin-right: 142px;
+    margin-right: 36px;
 }
 
 .curriencies {
-    padding-top: 120px;
+    padding: 0px 44px;
     display: flex;
 }
 
@@ -7710,18 +7783,23 @@ label {
 
 .boxes {
     display: flex;
+    flex-wrap:wrap;
     margin-top: -80px;
     margin-bottom: 0px;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 20px ;
 }
 
 .boxes .boxcontent {
     padding: 70px 42px;
-    width: 90%;
+    width: 86%;
+    margin-top: 40px;
     background-color: #ffffff;
     border: 1px solid #eeeeee;
     text-align: center;
     position: relative;
+}
+.boxes .col-md-12 .boxcontent{
+   width: 92%;
 }
 
 .boxes .boxcontent:hover {
@@ -7761,7 +7839,7 @@ label {
 
 .featuredtopics .text {
     text-align: center;
-    padding: 80px 300px;
+    padding: 80px 40px;
 }
 
 .featuredtopics .text h3 {
