@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -123,13 +124,40 @@
                     <div class="header2-right">
                         <div style="padding: 10px;" class="search">
                             <i class="fa-solid fa-magnifying-glass"></i>
+                            <div class="glass">
+                                <div class="searchinput">
+                                    <input type="search" placeholder="Search...">
+                                </div>
+                            </div>
                         </div>
                         <div style="padding: 10px;" class="account">
                             <i class="fa-regular fa-user"></i>
+                            <div class="user">
+                                <div class="text">
+                                    <p>Sign In</p>
+                                    <a class="caa" href="register.html">Create an Account</a>
+                                </div>
+                                <div class="forms">
+                                    <label for="">Username or email <span>*</span></label>
+                                    <input type="username" name="" id="" placeholder="Username">
+                                    <label for="">Password <span>*</span></label>
+                                    <input type="password" name="" id="" placeholder="Password">
+                                    <button>LOGIN</button>
+                                </div>
+                            </div>
                         </div>
-                        <div style="padding: 10px;" class="wishlist"> <a href=""><i class="fa-regular fa-heart"></i></a>
+                        <div style="padding: 10px;" class="wishlist"> <a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
                         </div>
-                        <div style="padding: 10px;" class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
+                        <div style="padding: 10px;" class="cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="cart2">
+                                <div class="content">
+
+                                    <i class="fa-solid fa-xmark"></i>
+                                    <div class="textt"><p>No products in the cart.</p></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -182,32 +210,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="filterbyprice">
-                    <h2>Filter by price</h2>
-                    <form>
-                        <div class="price_slider_wrapper" style="padding-right: 45px;">
-                            <div
-                                class="price_slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
-                                <div class="ui-slider-range ui-corner-all ui-widget-header"
-                                    style="left: 0%; width: 100%;"></div><span tabindex="0"
-                                    class="ui-slider-handle ui-corner-all ui-state-default"
-                                    style="left: 0%;"></span><span tabindex="0"
-                                    class="ui-slider-handle ui-corner-all ui-state-default" style="left: 100%;"></span>
-                            </div>
-                            <div class="price_slider_amount" data-step="10">
-                                <input type="text" id="lower" name="min_price" value="0" data-min="0"
-                                    placeholder="Min price" style="display: none;">
-                                <input type="text" id="upper" name="max_price" value="230" data-max="230"
-                                    placeholder="Max price" style="display: none;">
-                                <div class="price_label" style="color: #777777;">
-                                    Price: <span class="one" style="color: #000;">$0</span> — <span class="two"
-                                        style="color: #000;">$230</span>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+             
                 <div class="shoptag">
                     <h2>Tags</h2>
                     <div class="tagcloud">
@@ -223,12 +226,12 @@
                 <div class=" sorting">
                     <div class="col-lg-6">
                         <select name="sort" required>
-                            <option value="" disabled selected hidden>Default sorting</option>
-                            <option value="popularity">Sort by popularity</option>
-                            <option value="rating">Sort by average rating</option>
-                            <option value="latest">Sort by latest</option>
-                            <option value="lowtohigh">Sort by price: low to high</option>
-                            <option value="hightolow">Sort by price: high to low</option>
+                                <option value="" disabled selected hidden>Default sorting</option>
+                                <option value="popularity">Sort by popularity</option>
+                                <option value="rating">Sort by average rating</option>
+                                <option value="latest">Sort by latest</option>
+                                <option value="lowtohigh">Sort by price: low to high</option>
+                                <option value="hightolow">Sort by price: high to low</option>
                         </select>
 
                     </div>

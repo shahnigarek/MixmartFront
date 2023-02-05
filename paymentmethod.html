@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -34,10 +34,10 @@
                                 <a href="#">Clients</a>
                                 <a href="#">Contact</a>
                             </div>
-    
+
                             <span onclick="openNav()"><i class="fa-solid fa-bars-staggered"></i></span>
-    
-    
+
+
                         </div>
                     </div>
                 </div>
@@ -98,11 +98,13 @@
                                             </li>
                                             <li
                                                 class="site-nav__dropdown-container site-nav__dropdown-container--second-level">
-                                                <a href="warrantyandservices.html" class="meganav__link ">Warranty and Services</a>
+                                                <a href="warrantyandservices.html" class="meganav__link ">Warranty and
+                                                    Services</a>
                                             </li>
                                             <li
                                                 class="site-nav__dropdown-container site-nav__dropdown-container--second-level">
-                                                <a href="term&conditions.html" class="meganav__link ">Term & Conditions</a>
+                                                <a href="term&conditions.html" class="meganav__link ">Term &
+                                                    Conditions</a>
                                             </li>
                                         </div>
                                     </ul>
@@ -121,13 +123,40 @@
                     <div class="header2-right">
                         <div style="padding: 10px;" class="search">
                             <i class="fa-solid fa-magnifying-glass"></i>
+                            <div class="glass">
+                                <div class="searchinput">
+                                    <input type="search" placeholder="Search...">
+                                </div>
+                            </div>
                         </div>
                         <div style="padding: 10px;" class="account">
                             <i class="fa-regular fa-user"></i>
+                            <div class="user">
+                                <div class="text">
+                                    <p>Sign In</p>
+                                    <a class="caa" href="register.html">Create an Account</a>
+                                </div>
+                                <div class="forms">
+                                    <label for="">Username or email <span>*</span></label>
+                                    <input type="username" name="" id="" placeholder="Username">
+                                    <label for="">Password <span>*</span></label>
+                                    <input type="password" name="" id="" placeholder="Password">
+                                    <button>LOGIN</button>
+                                </div>
+                            </div>
                         </div>
-                        <div style="padding: 10px;" class="wishlist"> <a href=""><i class="fa-regular fa-heart"></i></a>
+                        <div style="padding: 10px;" class="wishlist"> <a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
                         </div>
-                        <div style="padding: 10px;" class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
+                        <div style="padding: 10px;" class="cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="cart2">
+                                <div class="content">
+
+                                    <i class="fa-solid fa-xmark"></i>
+                                    <div class="textt"><p>No products in the cart.</p></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -153,7 +182,7 @@
     </div>
 
     <main class="pm" style="padding: 115px 185px;">
-        <div class="paymentmethods" style="display: flex;"data-aos="fade-up" >
+        <div class="paymentmethods" style="display: flex;" data-aos="fade-up">
             <div class="col-lg-6 col-md-6">
                 <div class="firstquestion">
 
@@ -162,13 +191,13 @@
                         <div class="text">What payment methods do you accept?</div>
                     </div>
                     <p class="p">We accept the following payment options:</p>
-                    <ul>
-                        <li><i class="fa-solid fa-circle-check"></i>Visa</li>
-                        <li><i class="fa-solid fa-circle-check"></i>Visa Debit</li>
-                        <li><i class="fa-solid fa-circle-check"></i>Mastercard</li>
-                        <li><i class="fa-solid fa-circle-check"></i>PayPal</li>
-                        <li><i class="fa-solid fa-circle-check"></i>Apple Pay</li>
-                    </ul>
+                    <p class="ulli">
+                        Visa
+                        Visa Debit
+                        Mastercard
+                        PayPal
+                        Apple Pay</p>
+                   
                     <p class="pp">All credit and debit card holders are subject to validation and
                         authorisation by both Auros and the card issuer, to maintain
                         security and prevent fraud.</p>
@@ -184,13 +213,19 @@
                     <div class="icon"><i class="fa-regular fa-circle-question"></i></div>
                     <div class="text">When will payment be taken?</div>
                 </div>
-                <p class="p">If your card is authorised, we’ll send you an email confirming your order has been successful.</p>
-                <p class="pp">Payment will then be taken upon dispatch.</p>
-                <p class="pp">If your card is not authorised, payment will not be taken and we’ll email you to let you know that your bank or card issuer wouldn’t authorise the payment.</p>
+                <p class="p">If your card is authorised, we’ll send you an email confirming your order has been
+                    successful.
+
+                    Payment will then be taken upon dispatch.
+
+                    If your card is not authorised, payment will not be taken and we’ll email you to let you know that
+                    your bank or card issuer wouldn’t authorise the payment.</p>
             </div>
             <div class="col-lg-6 col-md-6">
-                <p class="p1">Please take great care to enter all your details accurately during checkout, as often incorrect or incomplete information can result in your bank or card issuer declining payment.</p>
-                <p class="p2">If you’re unsure why your payment is declined, please contact your card issuer or bank.</p>
+                <p class="pp">Please take great care to enter all your details accurately during checkout, as often
+                    incorrect or incomplete information can result in your bank or card issuer declining payment.
+
+                    If you’re unsure why your payment is declined, please contact your card issuer or bank.</p>
             </div>
         </div>
         <div class="curriencies" data-aos="fade-up">
@@ -199,10 +234,10 @@
                     <div class="icon"><i class="fa-regular fa-circle-question"></i></div>
                     <div class="text">What currencies do you accept?</div>
                 </div>
-                <p class="p">We only accept payment in pounds sterling.
+                <p class="ppp">We only accept payment in pounds sterling.
                 </p>
             </div>
-           
+
         </div>
     </main>
 

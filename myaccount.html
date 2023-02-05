@@ -14,7 +14,6 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 
 <body>
@@ -123,13 +122,40 @@
                     <div class="header2-right">
                         <div style="padding: 10px;" class="search">
                             <i class="fa-solid fa-magnifying-glass"></i>
+                            <div class="glass">
+                                <div class="searchinput">
+                                    <input type="search" placeholder="Search...">
+                                </div>
+                            </div>
                         </div>
                         <div style="padding: 10px;" class="account">
                             <i class="fa-regular fa-user"></i>
+                            <div class="user">
+                                <div class="text">
+                                    <p>Sign In</p>
+                                    <a class="caa" href="register.html">Create an Account</a>
+                                </div>
+                                <div class="forms">
+                                    <label for="">Username or email <span>*</span></label>
+                                    <input type="username" name="" id="" placeholder="Username">
+                                    <label for="">Password <span>*</span></label>
+                                    <input type="password" name="" id="" placeholder="Password">
+                                    <button>LOGIN</button>
+                                </div>
+                            </div>
                         </div>
-                        <div style="padding: 10px;" class="wishlist"> <a href=""><i class="fa-regular fa-heart"></i></a>
+                        <div style="padding: 10px;" class="wishlist"> <a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
                         </div>
-                        <div style="padding: 10px;" class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
+                        <div style="padding: 10px;" class="cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="cart2">
+                                <div class="content">
+
+                                    <i class="fa-solid fa-xmark"></i>
+                                    <div class="textt"><p>No products in the cart.</p></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -154,13 +180,13 @@
         </div>
     </div>
     <!-- Start My Account Area  -->
-    <div class="axil-dashboard-area axil-section-gap">
+    <div class="dashboard-area">
         <div class="container">
-            <div class="axil-dashboard-warp">
-                <div class="axil-dashboard-author">
+            <div class="dashboard-warp">
+                <div class="author">
                     <div class="media">
                         <div class="thumbnail">
-                            <img src="assets/images/index/author1.png" >
+                            <img src="assets/images/index/author1.png">
                         </div>
                         <div class="media-body">
                             <h5 class="title mb-0">Hello Nigar</h5>
@@ -169,38 +195,38 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xl-3 col-md-4">
-                        <aside class="axil-dashboard-aside">
-                            <nav class="axil-dashboard-nav">
-                                <div class="nav nav-tabs" role="tablist">
+                    <div class="col-lg-3 col-md-4">
+                        <aside class="dashboard-aside">
+                            <nav class="dashboard-nav">
+                                <div class="nav nav-tabs">
                                     <a class="nav-item nav-link active" data-bs-toggle="tab" href="#nav-dashboard"
-                                        role="tab" aria-selected="true"><i class="fas fa-th-large"></i>Dashboard</a>
-                                    <a class="nav-item nav-link" data-bs-toggle="tab" href="#nav-orders" role="tab"
+                                        aria-selected="true"><i class="fas fa-th-large"></i>Dashboard</a>
+                                    <a class="nav-item nav-link" data-bs-toggle="tab" href="#nav-orders"
                                         aria-selected="false"><i class="fas fa-shopping-basket"></i>Orders</a>
-                                    <a class="nav-item nav-link" data-bs-toggle="tab" href="#nav-downloads" role="tab"
+                                    <a class="nav-item nav-link" data-bs-toggle="tab" href="#nav-downloads"
                                         aria-selected="false"><i class="fas fa-file-download"></i>Downloads</a>
-                                    <a class="nav-item nav-link" data-bs-toggle="tab" href="#nav-address" role="tab"
+                                    <a class="nav-item nav-link" data-bs-toggle="tab" href="#nav-address"
                                         aria-selected="false"><i class="fas fa-home"></i>Addresses</a>
-                                    <a class="nav-item nav-link" data-bs-toggle="tab" href="#nav-account" role="tab"
+                                    <a class="nav-item nav-link" data-bs-toggle="tab" href="#nav-account"
                                         aria-selected="false"><i class="fas fa-user"></i>Account Details</a>
-                                    <a class="nav-item nav-link" href="sign-in.html"><i
-                                            class="fal fa-sign-out"></i>Logout</a>
+                                    <a class="nav-item nav-link" href="register.html"><i
+                                            class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
                                 </div>
                             </nav>
                         </aside>
                     </div>
-                    <div class="col-xl-9 col-md-8">
+                    <div class="col-lg-9 col-md-8">
                         <div class="tab-content">
-                            <div class="tab-pane fade show active" id="nav-dashboard" role="tabpanel">
-                                <div class="axil-dashboard-overview">
-                                    <div class="welcome-text">Hello Annie (not <span>Annie?</span> <a
-                                            href="sign-in.html">Log Out</a>)</div>
+                            <div class="tab-pane fade show active" id="nav-dashboard">
+                                <div class="dashboard-overview">
+                                    <div class="welcome-text">Hello Nigar (not <span>Nigar?</span> <a
+                                            href="register.html">Log Out</a>)</div>
                                     <p>From your account dashboard you can view your recent orders, manage your shipping
                                         and billing addresses, and edit your password and account details.</p>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="nav-orders" role="tabpanel">
-                                <div class="axil-dashboard-order">
+                            <div class="tab-pane fade" id="nav-orders">
+                                <div class="dashboard-order">
                                     <div class="table-responsive">
                                         <table class="table">
                                             <thead>
@@ -218,63 +244,63 @@
                                                     <td>September 10, 2020</td>
                                                     <td>Processing</td>
                                                     <td>$326.63 for 3 items</td>
-                                                    <td><a href="#" class="axil-btn view-btn">View</a></td>
+                                                    <td><a href="#" class="btn view-btn">View</a></td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">#6523</th>
                                                     <td>September 10, 2020</td>
                                                     <td>On Hold</td>
                                                     <td>$326.63 for 3 items</td>
-                                                    <td><a href="#" class="axil-btn view-btn">View</a></td>
+                                                    <td><a href="#" class="btn view-btn">View</a></td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">#6523</th>
                                                     <td>September 10, 2020</td>
                                                     <td>Processing</td>
                                                     <td>$326.63 for 3 items</td>
-                                                    <td><a href="#" class="axil-btn view-btn">View</a></td>
+                                                    <td><a href="#" class="btn view-btn">View</a></td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">#6523</th>
                                                     <td>September 10, 2020</td>
                                                     <td>Processing</td>
                                                     <td>$326.63 for 3 items</td>
-                                                    <td><a href="#" class="axil-btn view-btn">View</a></td>
+                                                    <td><a href="#" class="btn view-btn">View</a></td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">#6523</th>
                                                     <td>September 10, 2020</td>
                                                     <td>Processing</td>
                                                     <td>$326.63 for 3 items</td>
-                                                    <td><a href="#" class="axil-btn view-btn">View</a></td>
+                                                    <td><a href="#" class="btn view-btn">View</a></td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="nav-downloads" role="tabpanel">
-                                <div class="axil-dashboard-order">
+                            <div class="tab-pane fade" id="nav-downloads">
+                                <div class="dashboard-order">
                                     <p>You don't have any download</p>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="nav-address" role="tabpanel">
-                                <div class="axil-dashboard-address">
+                            <div class="tab-pane fade" id="nav-address">
+                                <div class="dashboard-address">
                                     <p class="notice-text">The following addresses will be used on the checkout page by
                                         default.</p>
-                                    <div class="row row--30">
+                                    <div class="row ">
                                         <div class="col-lg-6">
-                                            <div class="address-info mb--40">
+                                            <div class="address-info" style="margin-bottom: 40px;">
                                                 <div
                                                     class="addrss-header d-flex align-items-center justify-content-between">
-                                                    <h4 class="title mb-0">Shipping Address</h4>
+                                                    <h4 style="margin-bottom: 0px;" class="title ">Shipping Address</h4>
                                                     <a href="#" class="address-edit"><i class="far fa-edit"></i></a>
                                                 </div>
                                                 <ul class="address-details">
-                                                    <li>Name: Annie Mario</li>
-                                                    <li>Email: annie@example.com</li>
+                                                    <li>Name: Nigar Kazimli</li>
+                                                    <li>Email: shahnigarek@code.edu.az</li>
                                                     <li>Phone: 1234 567890</li>
-                                                    <li class="mt--30">7398 Smoke Ranch Road <br>
+                                                    <li style="margin-top: 30px;">7398 Smoke Ranch Road <br>
                                                         Las Vegas, Nevada 89128</li>
                                                 </ul>
                                             </div>
@@ -283,14 +309,14 @@
                                             <div class="address-info">
                                                 <div
                                                     class="addrss-header d-flex align-items-center justify-content-between">
-                                                    <h4 class="title mb-0">Billing Address</h4>
+                                                    <h4 class="title" style="margin-bottom: 0px;">Billing Address</h4>
                                                     <a href="#" class="address-edit"><i class="far fa-edit"></i></a>
                                                 </div>
                                                 <ul class="address-details">
-                                                    <li>Name: Annie Mario</li>
-                                                    <li>Email: annie@example.com</li>
+                                                    <li>Name: Nigar Kazimli</li>
+                                                    <li>Email: shahnigarek@code.edu.az</li>
                                                     <li>Phone: 1234 567890</li>
-                                                    <li class="mt--30">7398 Smoke Ranch Road <br>
+                                                    <li style="margin-top: 30px;">7398 Smoke Ranch Road <br>
                                                         Las Vegas, Nevada 89128</li>
                                                 </ul>
                                             </div>
@@ -298,25 +324,25 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="nav-account" role="tabpanel">
+                            <div class="tab-pane fade" id="nav-account">
                                 <div class="col-lg-9">
-                                    <div class="axil-dashboard-account">
+                                    <div class="dashboard-account">
                                         <form class="account-details-form">
                                             <div class="row">
                                                 <div class="col-lg-6">
                                                     <div class="form-group">
                                                         <label>First Name</label>
-                                                        <input type="text" class="form-control" value="Annie">
+                                                        <input type="text" class="form-control" value="Nigar">
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-6">
                                                     <div class="form-group">
                                                         <label>Last Name</label>
-                                                        <input type="text" class="form-control" value="Mario">
+                                                        <input type="text" class="form-control" value="Kazimli">
                                                     </div>
                                                 </div>
                                                 <div class="col-12">
-                                                    <div class="form-group mb--40">
+                                                    <div class="form-group" style="margin-bottom: 40px;">
                                                         <label>Country/ Region</label>
                                                         <select class="select2">
                                                             <option value="1">United Kindom (UK)</option>
@@ -324,7 +350,8 @@
                                                             <option value="1">United Arab Emirates (UAE)</option>
                                                             <option value="1">Australia</option>
                                                         </select>
-                                                        <p class="b3 mt--10">This will be how your name will be
+                                                        <p class="b3" style="margin-top: 10px;">This will be how your
+                                                            name will be
                                                             displayed in the account section and in reviews</p>
                                                     </div>
                                                 </div>
@@ -343,8 +370,8 @@
                                                         <label>Confirm New Password</label>
                                                         <input type="password" class="form-control">
                                                     </div>
-                                                    <div class="form-group mb--0">
-                                                        <input type="submit" class="axil-btn" value="Save Changes">
+                                                    <div class="form-group" style="margin-bottom: 0px;">
+                                                        <input type="submit" class="btn" value="Save Changes">
                                                     </div>
                                                 </div>
                                             </div>
@@ -366,7 +393,7 @@
         <div class="footer1">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-3">
                         <div class="footer-logo">
                             <img style="width:190px" src="assets/images/favicon/logo1.svg" alt="">
                         </div>
@@ -376,26 +403,26 @@
                             <p>A : VIA SACRA 11, ROME</p>
                         </div>
                     </div>
-                    <div class="footer-menu col-lg-3 " style="margin-top: 100px;">
+                    <div class="footer-menu col-lg-3  col-md " style="margin-top: 100px;">
                         <ul class="menu-list">
                             <li class="menu-item"><a href="">Shop</a></li>
                             <li class="menu-item"><a href="">Out Work</a></li>
                             <li class="menu-item"><a href="">History</a></li>
                         </ul>
                     </div>
-                    <div class="footer-menu col-lg-3" style="margin-top: 100px;">
+                    <div class="footer-menu col-lg-3  col-md" style="margin-top: 100px;">
                         <ul class="menu-list">
                             <li class="menu-item"><a href="">About Us</a></li>
                             <li class="menu-item"><a href="">Privacy Policy</a></li>
                             <li class="menu-item"><a href="">Contact</a></li>
                         </ul>
                     </div>
-                    <div class="footer-newsletter col-lg-3 " style="margin-top: 100px; ">
+                    <div class="footer-newsletter col-lg-3 col-md-3  col-12 " style="margin-top: 100px; ">
                         <div class="newsletter-form">
                             <form method="post" action="" class="contact-form"><input type="hidden" name="form_type"
                                     value="customer" /><input type="hidden" name="utf8" value="✓" />
                                 <label for="NewsletterEmail-1567467787738" class="footer-label">
-                                    <p>Newsletter</p>
+                                    <p style="color: #fff; font-weight: 400;">Newsletter</p>
                                 </label>
                                 <div class="input-group">
                                     <input style="padding: 15px 0px;" type="email" value="" placeholder="Your email"
@@ -420,14 +447,14 @@
         <div class="footer-copyright">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6">
                         <p>
                             2022 MIXMART THEMES
                         </p>
 
                     </div>
 
-                    <div class="col-lg-6 footer-copyright-right" style="text-align:right;">
+                    <div class="col-lg-6 col-md-6 footer-copyright-right" style="text-align:right;">
 
                         <a href=""><i class="fa-brands fa-facebook-f"></i></a>
                         <a href=""><i class="fa-brands fa-twitter"></i></a>
