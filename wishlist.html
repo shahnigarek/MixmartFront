@@ -14,6 +14,7 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
@@ -26,20 +27,53 @@
                     <div class="header2-left">
                         <a href=""><img style="width: 190px;" src="assets/images/favicon/logo.svg"></a>
                         <div class="sidenavigation">
-                            <div id="mySidenav" class="sidenav">
-                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                                <a href="#">About</a>
-                                <a href="#">Services</a>
-                                <a href="#">Clients</a>
-                                <a href="#">Contact</a>
+                            <button style="outline: none;border:none;" class="btn" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasWithBackdrop"> <i
+                                    class="fa-solid fa-bars-staggered"></i></button>
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
+                                aria-labelledby="offcanvasWithBackdropLabel">
+                                <div class="offcanvas-header">
+                                   
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+
+                                    <nav>
+                                        <ul>
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="shop.html">Shop</a>
+                                                <ul>
+                                                    <li><a href="shippingmethod.html">Shipping Merhod</a></li>
+                                                    <li><a href="paymentmethod.html">Payment Method</a></li>
+                                                    <li><a href="myaccount.html">My Account</a></li>
+                                                    <li><a href="cart">Cart</a></li>
+
+                                                </ul>
+                                            </li>
+                                            <li><a href="product.html">Product</a></li>
+                                            <li><a href="">Pages</a>
+                                                <ul>
+                                                    <li><a href="about.html">About</a></li>
+                                                    <li><a href="404.html">404</a></li>
+                                                    <li><a href="supportpage.html">Support Page</a></li>
+                                                    <li><a href="warrantyandservices.html">Warranty and Services</a>
+                                                    </li>
+                                                    <li><a href="term&conditions.html">Term and Conditions</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="blog.html">Blog</a></li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul>
+                                    </nav>
+
+                                </div>
                             </div>
-    
-                            <span onclick="openNav()"><i class="fa-solid fa-bars-staggered"></i></span>
-    
-    
                         </div>
+
                     </div>
                 </div>
+
                 <div class="col-lg-6 header2-middle">
                     <nav class="nav-bar">
                         <ul class="site-nav">
@@ -97,11 +131,13 @@
                                             </li>
                                             <li
                                                 class="site-nav__dropdown-container site-nav__dropdown-container--second-level">
-                                                <a href="warrantyandservices.html" class="meganav__link ">Warranty and Services</a>
+                                                <a href="warrantyandservices.html" class="meganav__link ">Warranty and
+                                                    Services</a>
                                             </li>
                                             <li
                                                 class="site-nav__dropdown-container site-nav__dropdown-container--second-level">
-                                                <a href="term&conditions.html" class="meganav__link ">Term & Conditions</a>
+                                                <a href="term&conditions.html" class="meganav__link ">Term &
+                                                    Conditions</a>
                                             </li>
                                         </div>
                                     </ul>
@@ -142,7 +178,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div style="padding: 10px;" class="wishlist"> <a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
+                        <div style="padding: 10px;" class="wishlist"> <a href="wishlist.html"><i
+                                    class="fa-regular fa-heart"></i></a>
                         </div>
                         <div style="padding: 10px;" class="cart">
                             <i class="fa-solid fa-cart-shopping"></i>
@@ -150,38 +187,41 @@
                                 <div class="content">
 
                                     <i class="fa-solid fa-xmark"></i>
-                                    <div class="textt"><p>No products in the cart.</p></div>
+                                    <div class="textt">
+                                        <p>No products in the cart.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
-        </div>
+                </div>
+
+            </div>
     </header>
     <div class="title-bar"
-    style="background-image: url(/assets/images/index/shop/breadcrumb_bkg2.jpg);background-size: cover;background-position: center;padding: 45px 0px;">
-    <div class="container">
-        <div class="row">
-            <div class="title-bar-text" style="text-align: center;">
-                <div class="title-bar-header" style="margin-bottom: 20px;">
-                    <h1 style="color:#3a3d46;font-family: rufina;font-size: 52px;">Wishlist</h1>
-                </div>
-                <div class="title-bar-breadcrumb">
-                    <span style="color: #777777;font-size: 15px;">Home</span>
-                    <i style="color: #777777;font-size: 8px;padding: 0 10px;" class="fa-solid fa-chevron-right"></i>
-                    <span style="color: #3a3d46;font-size: 15px;">Wishlist</span>
+        style="background-image: url(/assets/images/index/shop/breadcrumb_bkg2.jpg);background-size: cover;background-position: center;padding: 45px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="title-bar-text" style="text-align: center;">
+                    <div class="title-bar-header" style="margin-bottom: 20px;">
+                        <h1 style="color:#3a3d46;font-family: rufina;font-size: 52px;">Wishlist</h1>
+                    </div>
+                    <div class="title-bar-breadcrumb">
+                        <span style="color: #777777;font-size: 15px;">Home</span>
+                        <i style="color: #777777;font-size: 8px;padding: 0 10px;" class="fa-solid fa-chevron-right"></i>
+                        <span style="color: #3a3d46;font-size: 15px;">Wishlist</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+    
     <footer class="footer">
         <div class="footer1">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-3">
                         <div class="footer-logo">
                             <img style="width:190px" src="assets/images/favicon/logo1.svg" alt="">
                         </div>
@@ -191,26 +231,26 @@
                             <p>A : VIA SACRA 11, ROME</p>
                         </div>
                     </div>
-                    <div class="footer-menu col-lg-3 " style="margin-top: 100px;">
+                    <div class="footer-menu col-lg-3  col-md " style="margin-top: 100px;">
                         <ul class="menu-list">
                             <li class="menu-item"><a href="">Shop</a></li>
                             <li class="menu-item"><a href="">Out Work</a></li>
                             <li class="menu-item"><a href="">History</a></li>
                         </ul>
                     </div>
-                    <div class="footer-menu col-lg-3" style="margin-top: 100px;">
+                    <div class="footer-menu col-lg-3  col-md" style="margin-top: 100px;">
                         <ul class="menu-list">
                             <li class="menu-item"><a href="">About Us</a></li>
                             <li class="menu-item"><a href="">Privacy Policy</a></li>
                             <li class="menu-item"><a href="">Contact</a></li>
                         </ul>
                     </div>
-                    <div class="footer-newsletter col-lg-3 " style="margin-top: 100px; ">
+                    <div class="footer-newsletter col-lg-3 col-md-3  col-12 " style="margin-top: 100px; ">
                         <div class="newsletter-form">
                             <form method="post" action="" class="contact-form"><input type="hidden" name="form_type"
                                     value="customer" /><input type="hidden" name="utf8" value="✓" />
                                 <label for="NewsletterEmail-1567467787738" class="footer-label">
-                                    <p>Newsletter</p>
+                                    <p style="color: #fff; font-weight: 400;">Newsletter</p>
                                 </label>
                                 <div class="input-group">
                                     <input style="padding: 15px 0px;" type="email" value="" placeholder="Your email"
@@ -235,14 +275,14 @@
         <div class="footer-copyright">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6">
                         <p>
                             2022 MIXMART THEMES
                         </p>
 
                     </div>
 
-                    <div class="col-lg-6 footer-copyright-right" style="text-align:right;">
+                    <div class="col-lg-6 col-md-6 footer-copyright-right" style="text-align:right;">
 
                         <a href=""><i class="fa-brands fa-facebook-f"></i></a>
                         <a href=""><i class="fa-brands fa-twitter"></i></a>

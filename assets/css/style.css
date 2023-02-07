@@ -206,6 +206,45 @@ a {
 
 /* HEADER END */
 
+/* SIDEBAR */
+
+ .offcanvas-body nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  
+ .offcanvas-body nav ul li {
+    margin-right: 10px;
+    position: relative;
+  }
+  
+ .offcanvas-body nav a {
+    display: block;
+    padding: 0 10px;
+    color: #333;
+    font-size: 20px;
+    line-height: 60px;
+    text-decoration: none;
+  }
+  
+ .offcanvas-body nav ul ul {
+    display: none;
+    position: relative; 
+  }
+  
+ .offcanvas-body nav ul li:hover > ul {
+    display:inherit;
+  }
+  
+ .offcanvas-body nav ul ul ul {
+    margin-left: 100px; 
+    top: 0; 
+  }
+  
+/* SIDEBAREND */
+
 /* FOOTER */
 .footer {
     background-color: #3a3d46;
@@ -1436,10 +1475,6 @@ display: block;
     padding-top: 3em;
 }
 
-
-.filterbyprice form {
-    padding: 0.4em 0;
-}
 
 .asidecontent .shoptag {
 
@@ -3237,12 +3272,79 @@ margin-bottom: 20px;
 
 /* MYACCOUNTEND */
 
+/* FILTERSIDEBAR */
+
+.offcanvas-body .shopcategories ul {
+    padding-left: 0;
+    list-style: none;
+  
+  }
+  
+  .offcanvas-body .shopcategories ul li {
+    padding: 7px;
+    font-size: 14px;
+    color: #777777;
+  }
+  
+  .offcanvas-body .shopcategories ul li a {
+  
+    color: #333;
+    transition: all ease-in-out .3s;
+    font-size: 16px;
+  }
+  
+  .offcanvas-body .shopcategories ul li a:hover {
+  
+    color: #f4c3bc;
+  }
+  
+  
+  .offcanvas-body .shopcategories ul li span {
+    float: right;
+    margin-right: 35px;
+  }
+  
+  .offcanvas-body .filterbyprice {
+  
+    margin-top: 3em;
+    padding-top: 3em;
+  }
+  
+  
+
+  .offcanvas-body .shoptag {
+  
+    margin-top: 3em;
+    padding-top: 3em;
+  }
+  
+  .offcanvas-body .tagcloud a {
+    font-size: 13px !important;
+    display: inline-block;
+    position: relative;
+    width: auto;
+    border: 1px solid #eee;
+    padding: 2px 15px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    transition: all ease-in-out .3s;
+    word-wrap: break-word;
+    z-index: 0;
+  }
+  .filtersidebar{
+    display: none;
+    
+}
+/* FILTERSIDEBAREND */
+
 
 
 /* MOBILE */
 @media (max-width: 576px) {
 
-    
+    .filtersidebar{
+        display: block;
+    }
 /* MYACCOUNT */
 .dashboard-area {
     padding: 80px 0
@@ -3561,7 +3663,7 @@ margin-bottom: 20px;
     }
 
     .header-bottom {
-        display: block;
+        display: none;
     }
 
     .header-middle-middle {

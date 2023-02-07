@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        
+
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -24,25 +24,58 @@
 
         <div class="header2">
             <div class="row">
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4">
                     <div class="header2-left">
                         <a href=""><img style="width: 190px;" src="assets/images/favicon/logo.svg"></a>
                         <div class="sidenavigation">
-                            <div id="mySidenav" class="sidenav">
-                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                                <a href="#">About</a>
-                                <a href="#">Services</a>
-                                <a href="#">Clients</a>
-                                <a href="#">Contact</a>
+                            <button style="outline: none;border:none;" class="btn" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasWithBackdrop"> <i
+                                    class="fa-solid fa-bars-staggered"></i></button>
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
+                                aria-labelledby="offcanvasWithBackdropLabel">
+                                <div class="offcanvas-header">
+
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+
+                                    <nav>
+                                        <ul>
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="shop.html">Shop</a>
+                                                <ul>
+                                                    <li><a href="shippingmethod.html">Shipping Merhod</a></li>
+                                                    <li><a href="paymentmethod.html">Payment Method</a></li>
+                                                    <li><a href="myaccount.html">My Account</a></li>
+                                                    <li><a href="cart">Cart</a></li>
+
+                                                </ul>
+                                            </li>
+                                            <li><a href="product.html">Product</a></li>
+                                            <li><a href="">Pages</a>
+                                                <ul>
+                                                    <li><a href="about.html">About</a></li>
+                                                    <li><a href="404.html">404</a></li>
+                                                    <li><a href="supportpage.html">Support Page</a></li>
+                                                    <li><a href="warrantyandservices.html">Warranty and Services</a>
+                                                    </li>
+                                                    <li><a href="term&conditions.html">Term and Conditions</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="blog.html">Blog</a></li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul>
+                                    </nav>
+
+                                </div>
                             </div>
-
-                            <span onclick="openNav()"><i class="fa-solid fa-bars-staggered"></i></span>
-
-
                         </div>
+
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12  header2-middle">
+
+                <div class="col-lg-6 header2-middle">
                     <nav class="nav-bar">
                         <ul class="site-nav">
                             <li class="site-nav__item">
@@ -120,7 +153,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-lg-2 col-md-6">
+                <div class="col-lg-2">
                     <div class="header2-right">
                         <div style="padding: 10px;" class="search">
                             <i class="fa-solid fa-magnifying-glass"></i>
@@ -146,7 +179,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div style="padding: 10px;" class="wishlist"> <a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
+                        <div style="padding: 10px;" class="wishlist"> <a href="wishlist.html"><i
+                                    class="fa-regular fa-heart"></i></a>
                         </div>
                         <div style="padding: 10px;" class="cart">
                             <i class="fa-solid fa-cart-shopping"></i>
@@ -154,16 +188,17 @@
                                 <div class="content">
 
                                     <i class="fa-solid fa-xmark"></i>
-                                    <div class="textt"><p>No products in the cart.</p></div>
+                                    <div class="textt">
+                                        <p>No products in the cart.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
 
             </div>
-
-        </div>
     </header>
     <div class="title-bar"
         style="background-image: url(/assets/images/index/shop/breadcrumb_bkg2.jpg);background-size: cover;background-position: center;padding: 45px 0px;">
@@ -210,7 +245,7 @@
                         </li>
                     </ul>
                 </div>
-             
+
                 <div class="shoptag">
                     <h2>Tags</h2>
                     <div class="tagcloud">
@@ -222,16 +257,65 @@
                     </div>
                 </div>
             </div>
+            <div class="filtersidebar">
+                <a class="btn" style="outline: none;border:none;" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                   <img style="width: 30px;" src="assets/images/favicon/filter.png" alt="">
+                  </a>
+                  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="shopcategories">
+                            <h2>Product categories</h2>
+                            <ul>
+                                <li>
+                                    <a href="">Gift ideas</a>
+                                    <span>(9)</span>
+                                </li>
+                                <li>
+                                    <a href="">Handmade Cups</a>
+                                    <span>(8)</span>
+                                </li>
+                                <li>
+                                    <a href="">Home Decor</a>
+                                    <span>(14)</span>
+                                </li>
+                                <li>
+                                    <a href="">Kniting & Sewing</a>
+                                    <span>(11)</span>
+                                </li>
+                                <li>
+                                    <a href="">Uncategorized</a>
+                                    <span>(22)</span>
+                                </li>
+                            </ul>
+                        </div>
+            
+                        <div class="shoptag">
+                            <h2>Tags</h2>
+                            <div class="tagcloud">
+                                <a href="">Decor</a>
+                                <a href="">Dinner</a>
+                                <a href="">Gift</a>
+                                <a href="">Kniting</a>
+                                <a href="">Sewing</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
             <div class=" col-lg-9   maincontent">
+                
                 <div class=" sorting">
                     <div class="col-lg-6">
                         <select name="sort" required>
-                                <option value="" disabled selected hidden>Default sorting</option>
-                                <option value="popularity">Sort by popularity</option>
-                                <option value="rating">Sort by average rating</option>
-                                <option value="latest">Sort by latest</option>
-                                <option value="lowtohigh">Sort by price: low to high</option>
-                                <option value="hightolow">Sort by price: high to low</option>
+                            <option value="" disabled selected hidden>Default sorting</option>
+                            <option value="popularity">Sort by popularity</option>
+                            <option value="rating">Sort by average rating</option>
+                            <option value="latest">Sort by latest</option>
+                            <option value="lowtohigh">Sort by price: low to high</option>
+                            <option value="hightolow">Sort by price: high to low</option>
                         </select>
 
                     </div>
