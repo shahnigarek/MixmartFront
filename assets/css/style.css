@@ -2117,36 +2117,43 @@ label {
     font-size: 13px;
 }
 
-.article .comments .commentt {
-    display: flex;
-    border-top: 1px solid #eee;
+.article .comments .replycontent{
+ display: none;
+}
+.article .comments .replycontent{
+    border:1px solid #eee;
+    padding: 35px 30px;
+}
+.article .comments .replycontent h3{
+   font-family: rufina;
+}
+.article .comments .replycontent textarea{
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 15px;
+    border: 1px solid #eee;
+}
+.article .comments .replycontent input[type="text"]{
+   width: 50%;
+   padding: 15px;
+   border: 1px solid #eee;
+
+}
+.article .comments .replycontent input[type="email"]{
+    width: 49%;
+    padding: 15px;
+    margin-left: 9px;
+    border: 1px solid #eee;
+ 
+ }
+ .article .comments .replycontent .buttonn{
+   background-color: #2d2d2d;
+   color: #eee;
+    padding: 15px 75px ;
+    margin-top: 40px;
 }
 
-.article .comments .commentt .commentorimage {
-    padding-top: 25px;
-}
-
-.article .comments .commentt .commentorimage img {
-    border-radius: 50%;
-}
-
-.article .comments .commentt .commentorcomment {
-    padding: 30px 20px;
-}
-
-.article .comments .commentt .reply {
-    margin-left: auto;
-    padding-top: 30px;
-}
-
-.article .comments .commentt .reply i {
-    padding-right: 5px;
-    color: #3a3d46;
-    font-weight: 500;
-    font-size: 13px;
-}
-
-
+ 
 .article .leavereply h3 {
     font-size: 32px;
     font-family: rufina;
@@ -5152,26 +5159,7 @@ margin-bottom: 20px;
         font-size: 13px;
     }
 
-    .article .comments .commentt .commentorcomment {
-        padding: 30px 0px;
-        margin-bottom: -20px;
-    }
-
-    .article .comments .commentt .commentorcomment .pppp {
-        width: 85%;
-    }
-
-    .article .comments .commentt .reply {
-        padding-top: 0px !important;
-        margin-bottom: 45px;
-    }
-
-    .article .comments .commentt .reply i {
-        padding-right: 5px;
-        color: #3a3d46;
-        font-weight: 500;
-        font-size: 13px;
-    }
+  
 
 
     .article .leavereply h3 {

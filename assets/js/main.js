@@ -43,20 +43,23 @@ $(document).ready(function () {
     
     AOS.init();
    
-  
-
+    
 });
-$(document).ready(function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "250px";
-    }
+const reply = document.getElementById("reply");
+const replycontent = document.getElementById("replycontent");
+reply.addEventListener("click", function () {
+  if (replycontent.style.display === "none") {
+    replycontent.style.display = "block";
+  } else {
+    replycontent.style.display = "none";
+  }
+});
+const cancelreply = document.getElementById("cancelreply");
+cancelreply.addEventListener("click", function () {
+  if (replycontent.style.display === "none") {
+    replycontent.style.display = "block";
+  } else {
+    replycontent.style.display = "none";
+  }
+});
 
-   
-
-);
-$(document).ready(function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("main").style.marginLeft = "0";
-    }
-
-);
