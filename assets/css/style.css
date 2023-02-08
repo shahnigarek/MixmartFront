@@ -680,25 +680,39 @@ a {
     height: 268px;
 }
 
-
-.new-arrivals .newproducts .action {
-    background-color: #fff;
-    width: 45px;
-    padding: 20px 15px;
+.productcart {
+    position: relative;
+  }
+  
+  .product-image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .action {
+    transition: .5s ease;
+    opacity: 0;
     position: absolute;
-    left: 27%;
-    display: none;
-    transition: all .3s ease-in-out;
-    transform: translateY(-160%);
-    color: #777777;
-}
-.new-arrivals .newproducts .action i:hover{
-    color: #f4c3bc;
-}
-.new-arrivals .newproducts .action .addtowishlist{
-    padding-bottom: 10px;
+    top: 40%;
+    left: 84%;
+    transform: translate(-5%, -52%);
+    text-align: center;
+    background-color:white;
+    color: black;
+    font-size: 16px;
+    padding: 20px;
+  }
+ 
+  .productcart:hover .action {
+    opacity: 1;
+  }
+  
 
-} 
+
 .new-arrivals .newproducts .productcart .product-caption {
 
     padding-top: 25px;
@@ -729,12 +743,7 @@ a {
     border-color: transparent;
 
 }
-.new-arrivals .newproducts .productcart:hover .action {
 
- display: block;
- transition: all .35s ease;
-
-}
 
 /* NEW ARRIVALS END */
 /* BESTSELLERS */
@@ -771,7 +780,8 @@ a {
 }
 
 .best-sellers .bestsellerproducts .product-image img {
-    width: 333px;
+    width: 100%;
+
     height: 333px;
 
 }
@@ -783,7 +793,8 @@ a {
     padding-left: 15px;
     padding-right: 15px;
     text-align: center;
-    width: 333px;
+    width: 100%;
+
     height: 110px;
 }
 
@@ -807,7 +818,7 @@ a {
 
     box-shadow: 0 3px 7.92px 0.08px rgb(0 0 0 / 8%);
     border-color: transparent;
-    width: 333px;
+    width: 100%;
 }
 
 .best-sellers .bestsellerproducts .col-lg-3 .col-lg-6 {
@@ -1372,7 +1383,7 @@ display: block;
 }
 
 .maincontent .productss .product-image img {
-    width: 320px;
+    width: 100%;
     height: 320px;
 
 }
@@ -1384,7 +1395,7 @@ display: block;
     padding-left: 15px;
     padding-right: 15px;
     text-align: center;
-    width: 320px;
+    width: 100%;
     height: 110px;
 }
 
@@ -1413,7 +1424,7 @@ display: block;
     box-shadow: 0 3px 7.92px 0.08px rgb(0 0 0 / 8%);
     border-color: transparent;
     color: #3a3d46;
-    width: 320px;
+    width: 100%
 }
 
 
