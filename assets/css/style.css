@@ -3484,7 +3484,7 @@ margin-bottom: 20px;
 
 .dashboard-order .table tbody tr td,
 .dashboard-order .table tbody tr th {
-    padding: 20px 20px;
+    padding: 20px;
     vertical-align: middle;
     font-weight: 500;
     font-size: 14px;
@@ -3740,6 +3740,7 @@ margin-bottom: 20px;
 
     .footer-logo {
         margin-bottom: 50px;
+        text-align: center;
     }
 
     .settings p {
@@ -3881,7 +3882,7 @@ margin-bottom: 20px;
     }
 
     .instagram .photos .item img {
-        width: 124px;
+        width: 100%;
         margin-bottom: 10px;
         padding-right: 0px !important;
     }
@@ -4022,7 +4023,7 @@ margin-bottom: 20px;
     }
 
     .post .postinner .post-image a img {
-        width: 333px;
+        width: 100%;
         height: 410px;
     }
 
@@ -4076,7 +4077,7 @@ margin-bottom: 20px;
     }
 
     .making .handmade .product-cart .cart-image img {
-        width: 340px !important;
+        width: 100% !important;
     }
 
     .making .handmade .image1 {
@@ -4156,7 +4157,7 @@ margin-bottom: 20px;
 
     .new-arrivals .newproducts .product-image img {
         width: 100%;
-        height: 315px;
+        height: 100%;
         object-fit: cover;
 
     }
@@ -4164,7 +4165,7 @@ margin-bottom: 20px;
     .new-arrivals .newproducts .productcart .product-caption {
 
         padding-top: 30px;
-        padding-bottom: 95px;
+        padding-bottom: 10px;
         padding-left: 15px;
         padding-right: 15px;
         text-align: center;
@@ -4239,8 +4240,9 @@ margin-bottom: 20px;
     }
 
     .best-sellers .bestsellerproducts .product-image img {
-        width: 340px;
-        height: 340px;
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
 
     }
 
@@ -4251,8 +4253,8 @@ margin-bottom: 20px;
         padding-left: 15px;
         padding-right: 15px;
         text-align: center;
-        width: 355px;
-        height: 110px;
+        width: 100%;
+        height: 100%;
     }
 
     .best-sellers .bestsellerproducts .productcart .product-caption h3 {
@@ -4275,7 +4277,7 @@ margin-bottom: 20px;
 
         box-shadow: 0 3px 7.92px 0.08px rgb(0 0 0 / 8%);
         border-color: transparent;
-        width: 355px;
+        width: 100%;
     }
 
     .best-sellers .bestsellerproducts .col-lg-3 .col-lg-6 {
@@ -4339,7 +4341,7 @@ margin-bottom: 20px;
     }
 
     .movement .cardboxes .cardcontainer {
-        width: 340px;
+        width: 100%;
         min-height: 240px;
         border: 2px solid #fff;
     }
@@ -4510,8 +4512,9 @@ margin-bottom: 20px;
 
 
     .about .phrase .imgabout img {
-        width: 345px;
+        width: 100%;
         height: 430px;
+        padding-top: 25px;
         object-fit: cover;
     }
 
@@ -4561,7 +4564,7 @@ margin-bottom: 20px;
         background-repeat: no-repeat;
         height: 300px;
 
-        width: 335px;
+        width: 100%;
         display: inline-flex;
         background-size: cover;
         align-items: center;
@@ -4658,6 +4661,7 @@ margin-bottom: 20px;
 
     .team {
         padding-left: 0px !important;
+        text-align: center;
     }
 
     .team .top .team-text p {
@@ -4674,9 +4678,9 @@ margin-bottom: 20px;
     .team .top .team-image {
         background-image: url(/assets/images/index/blog/blogindex.png);
         background-repeat: no-repeat;
-        min-height: 70px !important;
+        min-height: 100% !important;
         margin-bottom: 30px;
-        min-width: 280px !important;
+        min-width:100% !important;
         background-size: contain;
         background-position: center;
         font-family: Rufina;
@@ -4693,8 +4697,8 @@ margin-bottom: 20px;
     }
 
     .teammembers .memberimage img {
-        width: 335px;
-        height: 445px;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
         margin-bottom: 30px;
         border-radius: 5px;
@@ -4727,30 +4731,6 @@ margin-bottom: 20px;
         font-weight: 400;
     }
 
-
-    .elementor-team-socials {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        padding: 30px;
-        visibility: hidden;
-        opacity: 0;
-        transform: translateY(100%);
-        transition: all .5s ease;
-    }
-
-    .team-icon-socials {
-        background: #fff;
-        border-radius: 5px;
-        margin: 0;
-        padding: 15px;
-        list-style: none;
-        font-size: 14px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
 
     /* ABOUT END */
 
@@ -4930,7 +4910,7 @@ margin-bottom: 20px;
     }
 
     .blogmain .post-image a img {
-        width: 360px;
+        width: 100%;
         height: 420px;
         object-fit: cover;
     }
@@ -4988,8 +4968,7 @@ margin-bottom: 20px;
     }
 
     .article .articleinner img {
-        width: 350px;
-        height: 150px;
+        width: 100%;
         object-fit: cover;
     }
 
@@ -5709,8 +5688,8 @@ margin-bottom: 20px;
     }
 
     .productcontent .col-lg-7 img {
-        width: 350px !important;
-        height: 350px !important;
+        width: 100% !important;
+        height: 100% !important;
     }
 
     .productcontent .col-lg-5 h1 {
@@ -5836,8 +5815,8 @@ margin-bottom: 20px;
     }
 
     .relatedproducts .relatedproductss .product-image img {
-        width: 350px;
-        height: 350px;
+        width: 100%;
+        height: 100%;
 
     }
 
@@ -5848,8 +5827,8 @@ margin-bottom: 20px;
         padding-left: 15px;
         padding-right: 15px;
         text-align: center;
-        width: 350px;
-        height: 110px;
+        width: 100%;
+        height: 100%;
     }
 
     .relatedproducts .relatedproductss .productcart .product-caption h3 {
@@ -5877,7 +5856,7 @@ margin-bottom: 20px;
         box-shadow: 0 3px 7.92px 0.08px rgb(0 0 0 / 8%);
         border-color: transparent;
         color: #3a3d46;
-        width: 350px;
+        width: 100%;
     }
 
     .relatedproducts .relatedproductss .product-image .onsale {

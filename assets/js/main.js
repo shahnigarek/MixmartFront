@@ -45,21 +45,28 @@ $(document).ready(function () {
    
     
 });
+
+
 const reply = document.getElementById("reply");
-const replycontent = document.getElementById("replycontent");
+const replycontents = document.querySelectorAll(".replycontent");
+
 reply.addEventListener("click", function () {
-  if (replycontent.style.display === "none") {
-    replycontent.style.display = "block";
-  } else {
-    replycontent.style.display = "none";
+  for (let i = 0; i < replycontents.length; i++) {
+    if (replycontents[i].style.display === "none") {
+      replycontents[i].style.display = "block";
+    } else {
+      replycontents[i].style.display = "none";
+    }
   }
 });
 const cancelreply = document.getElementById("cancelreply");
-cancelreply.addEventListener("click", function () {
-  if (replycontent.style.display === "none") {
-    replycontent.style.display = "block";
+
+ cancelreply.addEventListener("click", function () {
+  for (let i = 0; i < replycontents.length; i++) {
+    if (replycontents[i].style.display === "none") {
+      replycontents[i].style.display = "block";
   } else {
-    replycontent.style.display = "none";
-  }
+      replycontents[i].style.display = "none";
+    }   }
 });
 
