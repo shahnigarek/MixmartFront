@@ -14,6 +14,7 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
@@ -32,7 +33,7 @@
                             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
                                 aria-labelledby="offcanvasWithBackdropLabel">
                                 <div class="offcanvas-header">
-                                   
+
                                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                                         aria-label="Close"></button>
                                 </div>
@@ -45,8 +46,7 @@
                                                 <ul>
                                                     <li><a href="shippingmethod.html">Shipping Merhod</a></li>
                                                     <li><a href="paymentmethod.html">Payment Method</a></li>
-                                                    <li><a href="myaccount.html">My Account</a></li>
-                                                    <li><a href="cart">Cart</a></li>
+                                                    
 
                                                 </ul>
                                             </li>
@@ -91,14 +91,6 @@
                                             <li
                                                 class="site-nav__dropdown-container site-nav__dropdown-container--second-level">
                                                 <a href="paymentmethod.html" class="meganav__link ">Payment Method</a>
-                                            </li>
-                                            <li
-                                                class="site-nav__dropdown-container site-nav__dropdown-container--second-level">
-                                                <a href="cart.html" class="meganav__link ">Cart</a>
-                                            </li>
-                                            <li
-                                                class="site-nav__dropdown-container site-nav__dropdown-container--second-level">
-                                                <a href="myaccount.html" class="meganav__link ">My account</a>
                                             </li>
                                             <li
                                                 class="site-nav__dropdown-container site-nav__dropdown-container--second-level">
@@ -154,13 +146,8 @@
                 <div class="col-lg-2">
                     <div class="header2-right">
                         <div style="padding: 10px;" class="search">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <div class="glass">
-                                <div class="searchinput">
-                                    <input type="search" placeholder="Search...">
-                                </div>
-                            </div>
-                        </div>
+                            <input type="search" placeholder="Search...">
+                </div>
                         <div style="padding: 10px;" class="account">
                             <i class="fa-regular fa-user"></i>
                             <div class="user">
@@ -181,15 +168,35 @@
                                     class="fa-regular fa-heart"></i></a>
                         </div>
                         <div style="padding: 10px;" class="cart">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <div class="cart2">
-                                <div class="content">
+                            <i class="fa-solid fa-cart-shopping" ></i><sup>0</sup>
+                            <div class="cart2 d-block">
+                                <!-- <div class="content">
 
                                     <i class="fa-solid fa-xmark"></i>
                                     <div class="textt">
                                         <p>No products in the cart.</p>
                                     </div>
+                                </div> -->
+                                <div class="price-content">
+                                  
+                                    <div class="cart-total price_inline">
+                                        <span class="label">Total:</span>
+                                        <span class="value">€233</span>
+                                    </div>
                                 </div>
+                                <div class="content2">
+                                    
+                                    <div class="picture">
+                                        <img style="width: 100%;" src="assets/images/index/shop/shop1.jpg" alt="">
+                                    </div>
+                                    <div class="pricecount">
+                                        <h6>Home decor</h6>
+                                        <p><span>1x</span>$129.99</p>
+                                    </div>
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                              
+
                             </div>
                         </div>
                     </div>
@@ -204,17 +211,92 @@
             <div class="row">
                 <div class="title-bar-text" style="text-align: center;">
                     <div class="title-bar-header" style="margin-bottom: 20px;">
-                        <h1 style="color:#3a3d46;font-family: rufina;font-size: 52px;">Cart</h1>
+                        <h1 style="color:#3a3d46;font-family: rufina;font-size: 52px;">Basket</h1>
                     </div>
                     <div class="title-bar-breadcrumb">
                         <span style="color: #777777;font-size: 15px;">Home</span>
                         <i style="color: #777777;font-size: 8px;padding: 0 10px;" class="fa-solid fa-chevron-right"></i>
-                        <span style="color: #3a3d46;font-size: 15px;">Cart</span>
+                        <span style="color: #3a3d46;font-size: 15px;">Basket</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <main class="basket">
+      
+        <div class="shopping-cart">
+
+            <div class="shopping-cart-table table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="image">Image</th>
+                            <th class="productt">Product</th>
+                            <th class="price">Price</th>
+                            <th class="quantity">Quantity</th>
+                            <th class="total">Total</th>
+                            <th class="delete">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="product-image ">
+                                    <img style="width:100px" src="assets/images/index/shop/shop12.jpg" alt="cart">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="product-title">
+                                    <h4 class="title"><a href="single-product.html">Home Decor</a></h4>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="product-price">
+                                    <span class="price">€122</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="product-quantity">
+                                    <div class="quantity mt-15 d-flex">
+                                        <a class="subCount btn" asp-controller="basket" asp-action="UpdateCount"
+                                            asp-route-id="@basketVM.ProductId"><i class="fa-solid fa-minus"></i></a>
+                                        <input type="text" value="1" />
+                                        <a class="addCount btn" asp-controller="basket" asp-action="UpdateCount"
+                                            asp-route-id="@basketVM.ProductId"><i class="fal fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="product-total">
+                                    <span class="total-amount">€233</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="product-delete">
+                                    <a class="deletefromcartbtn" asp-controller="basket" asp-action="DeleteFromCart"
+                                        asp-route-id="@basketVM.ProductId"><i class="fa-regular fa-trash-can"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="col-lg-12 col-md-6">
+            <div class="cart-total">
+                <div class="sub-total">
+                    <div class="single-total">
+                        <span class="cart-value">Subtotal:</span>
+                        <span class="cart-amount">€129.29</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
     <footer class="footer">
         <div class="footer1">
             <div class="container">
